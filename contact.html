@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Counsellor in Essex | Get in Touch — Essex Therapy</title>
+<meta name="description" content="Contact Clare at Essex Therapy for counselling in Essex. Call 07840 416633 or email clare@essextherapy.com. In-person and online sessions. You're welcome to get in touch.">
+<link rel="canonical" href="https://essextherapy.com/contact.html">
+<meta property="og:title" content="Contact Counsellor in Essex | Get in Touch">
+<meta property="og:description" content="Reach out for warm, confidential counselling in Essex. You don't need to be in crisis to get in touch.">
+<meta property="og:locale" content="en_GB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">Essex<span>Therapy</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="btn">Arrange a session</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="soft" style="padding:72px 0">
+  <div class="container">
+    <p class="eyebrow">Get in touch</p>
+    <h1 style="margin:0 0 12px">Reaching out is the first step</h1>
+    <p class="lead" style="max-width:740px">Reaching out for support can feel difficult. You're very welcome to get in touch in whatever way feels easiest for you. You don't need to have everything figured out — if something doesn't feel right, that's enough. I'll meet you where you are.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container split" style="align-items:start">
+    <div>
+      <h2>Send a message</h2>
+      <div id="banner"></div>
+      <form class="form" action="send.php" method="post">
+        <div class="row">
+          <div><label for="first">First name</label><input id="first" name="first" required></div>
+          <div><label for="last">Last name</label><input id="last" name="last"></div>
+        </div>
+        <div class="row">
+          <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div><label for="phone">Telephone</label><input id="phone" name="phone"></div>
+        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+        <button class="btn" type="submit">Send message</button>
+        <p class="note">Your message is treated with care and confidentiality. I aim to respond within 24–48 hours.</p>
+      </form>
+    </div>
+
+    <div>
+      <h2>Contact details</h2>
+      <ul class="contact-list" style="margin-top:18px">
+        <li><span class="k">Phone</span><a href="tel:+447840416633">07840 416633</a></li>
+        <li><span class="k">Email</span><a href="mailto:clare@essextherapy.com">clare@essextherapy.com</a></li>
+        <li><span class="k">Sessions</span><span>In person &amp; online — further details when you get in touch.</span></li>
+      </ul>
+      <p style="margin-top:16px;color:var(--muted)">If I'm unable to answer your call, please leave a message and I'll get back to you as soon as I can.</p>
+
+      <div class="card" style="margin-top:26px;background:var(--bg-tint);border:0">
+        <h3>What happens next</h3>
+        <p style="color:var(--ink)">Once you get in touch, I aim to respond within 24–48 hours. We can then arrange an initial session, or have a brief conversation to answer any questions you may have. You're under no pressure — this is simply a first step.</p>
+      </div>
+      <p style="margin-top:22px;font-style:italic;color:var(--primary-dark)">You don't need to be in crisis to reach out.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">Essex<span>Therapy</span></a>
+        <p style="margin-top:14px;max-width:38ch">Counselling in Essex for individuals, couples and families. A calm, confidential space to feel heard, understood and supported.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fees.html">Fees</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+447840416633">07840 416633</a></li>
+          <li><a href="mailto:clare@essextherapy.com">clare@essextherapy.com</a></li>
+          <li>Essex, UK — in person &amp; online</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Essex Therapy. All rights reserved.</span>
+      <span>Accredited counsellor · 25 years' experience</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var p = new URLSearchParams(location.search), b = document.getElementById('banner');
+  if (p.get('sent'))  b.innerHTML = '<div class="notice ok">Thank you — your message has been sent. I\'ll be in touch soon.</div>';
+  if (p.get('error')) b.innerHTML = '<div class="notice err">Sorry, something went wrong. Please call 07840 416633 or email clare@essextherapy.com directly.</div>';
+</script>
+</body>
+</html>
