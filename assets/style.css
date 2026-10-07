@@ -301,3 +301,10 @@ details.faq p { margin: 12px 0 0; color: var(--muted); }
 
 /* Logos sit directly on the page, no white box */
 .mbadge.logo { background: none; border: 0; box-shadow: none; padding: 0; border-radius: 0; }
+
+/* Services page banner photo: save a bookshelf photo as assets/images/hero-bookshelf.jpg */
+.hero.hero-services {
+  background:
+    linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)),
+    url('images/hero-bookshelf.jpg') center/cover no-repeat, var(--bg-deep);
+}
