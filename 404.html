@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Not Found | Essex Therapy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="/index.html">Essex<span>Therapy</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li class="has-sub"><a href="/services.html">Services</a>
+        <ul class="sub">
+          <li><a href="/trauma-counselling-essex.html">Trauma</a></li>
+          <li><a href="/addiction-counselling-essex.html">Addiction</a></li>
+          <li><a href="/anxiety-neurodiversity-counselling-essex.html">Anxiety &amp; neurodiversity</a></li>
+          <li><a href="/couples-counselling-essex.html">Couples</a></li>
+          <li><a href="/complex-family-relationships-essex.html">Complex families</a></li>
+          <li><a href="/counselling-for-professionals-essex.html">For professionals</a></li>
+          <li><a href="/clinical-supervision-essex.html">Clinical supervision</a></li>
+        </ul>
+      </li>
+      <li><a href="/fees.html">Fees</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
+      <li><a href="/contact.html" class="btn">Arrange a session</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="hero hero-services" style="padding:96px 0 88px">
+  <div class="container">
+    <p class="eyebrow">Page not found</p>
+    <h1 style="max-width:none;font-size:2.6rem">Sorry, we can't find that page</h1>
+    <p class="lead">The page may have moved or the link may be out of date. You're very welcome to head back to the home page or get in touch.</p>
+    <div class="actions"><a class="btn" href="/index.html">Back to home</a> <a class="btn btn-ghost" href="/contact.html">Contact Me</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/index.html">Essex<span>Therapy</span></a>
+        <p style="margin-top:14px;max-width:38ch">Counselling in Essex for individuals, couples and families. A calm, confidential space to feel heard, understood and supported.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/fees.html">Fees</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+447840416633">07840 416633</a></li>
+          <li><a href="mailto:clare@essextherapy.com">clare@essextherapy.com</a></li>
+          <li>Essex, UK — in person &amp; online</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Essex Therapy. All rights reserved.</span>
+      <span>Accredited counsellor · 25 years' experience</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var p = new URLSearchParams(location.search), b = document.getElementById('banner');
+  if (p.get('sent'))  b.innerHTML = '<div class="notice ok">Thank you — your message has been sent. I\'ll be in touch soon.</div>';
+  if (p.get('error')) b.innerHTML = '<div class="notice err">Sorry, something went wrong. Please call 07840 416633 or email clare@essextherapy.com directly.</div>';
+</script>
+</body>
+</html>
