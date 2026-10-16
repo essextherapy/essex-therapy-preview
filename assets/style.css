@@ -308,3 +308,10 @@ details.faq p { margin: 12px 0 0; color: var(--muted); }
     linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)),
     url('images/hero-bookshelf.jpg') center/cover no-repeat, var(--bg-deep);
 }
+
+/* Article pages */
+.article p { font-size: 1.08rem; line-height: 1.8; }
+.article h2 { margin-top: 40px; }
+.article .lead-line { font-size: 1.2rem; }
+.article .callout { background: var(--bg-tint); border-left: 4px solid var(--silver-text); border-radius: var(--radius); padding: 26px 30px; margin: 34px 0; font-size: 1.15rem; }
+.article .closing { font-weight: 600; margin-top: 34px; }
