@@ -335,3 +335,8 @@ details.faq p { margin: 12px 0 0; color: var(--muted); }
 .hero.hero-about h1, .hero.hero-contact h1, .hero.hero-fees h1, .hero.hero-story h1 { max-width: none; font-size: 2.6rem; }
 .hero.hero-about .lead, .hero.hero-contact .lead, .hero.hero-fees .lead { color: var(--on-deep); }
 @media (max-width: 720px) { .hero.hero-about h1, .hero.hero-contact h1, .hero.hero-fees h1, .hero.hero-story h1 { font-size: 2rem; } }
+
+/* Article photo (prison story) */
+.article-photo { float: right; width: 290px; margin: 6px 0 22px 34px; }
+.article-photo img { width: 100%; height: auto; display: block; border-radius: var(--radius); box-shadow: var(--shadow); }
+@media (max-width: 720px) { .article-photo { float: none; width: 100%; max-width: 340px; margin: 0 auto 26px; } }
