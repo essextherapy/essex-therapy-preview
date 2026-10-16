@@ -315,3 +315,23 @@ details.faq p { margin: 12px 0 0; color: var(--muted); }
 .article .lead-line { font-size: 1.2rem; }
 .article .callout { background: var(--bg-tint); border-left: 4px solid var(--silver-text); border-radius: var(--radius); padding: 26px 30px; margin: 34px 0; font-size: 1.15rem; }
 .article .closing { font-weight: 600; margin-top: 34px; }
+
+/* Hero photos: About, Contact, Fees, Prison story */
+.hero.hero-about, .hero.hero-contact, .hero.hero-fees, .hero.hero-story {
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+.hero.hero-about {
+  background-image: linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)), url('images/Reading_Nook.jpg');
+}
+.hero.hero-contact {
+  background-image: linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)), url('images/Cosy_desk.jpg');
+}
+.hero.hero-fees {
+  background-image: linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)), url('images/Light_plant.jpg');
+}
+.hero.hero-story {
+  background-image: linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)), url('images/Prison.jpg');
+}
+.hero.hero-about h1, .hero.hero-contact h1, .hero.hero-fees h1, .hero.hero-story h1 { max-width: none; font-size: 2.6rem; }
+.hero.hero-about .lead, .hero.hero-contact .lead, .hero.hero-fees .lead { color: var(--on-deep); }
+@media (max-width: 720px) { .hero.hero-about h1, .hero.hero-contact h1, .hero.hero-fees h1, .hero.hero-story h1 { font-size: 2rem; } }
