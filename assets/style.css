@@ -278,7 +278,7 @@ details.faq p { margin: 12px 0 0; color: var(--muted); }
 .hero.hero-home {
   background:
     linear-gradient(135deg, rgba(196,200,204,.80), rgba(184,189,194,.72)),
-    url('images/hero-cabin.jpg') center/cover no-repeat, var(--bg-deep);
+    url('images/hero-essex.jpg') center/cover no-repeat, var(--bg-deep);
 }
 
 /* Nav "Arrange a session" button in silver */
